@@ -1,0 +1,268 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* NavBar */
+nav {
+    background-color: red;
+    color: white;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+nav div {
+    display: flex;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+nav div h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 100px;
+}
+
+nav div div {
+    margin-left: auto;
+    line-height: 100px;
+    display: flex;
+    gap: 50px;
+}
+
+nav div div a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav div div a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.destaque {
+    margin-top: 50px;
+}
+
+.apresentacao-dashboard {
+    display: flex;
+    gap: 50px;
+}
+
+.texto-imagem-dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-dashboard {
+    width: 960px;
+}
+
+.titulo-dashboard {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.texto-dashboard {
+    width: 100%;
+    font-size: large;
+    text-align: justify;
+}
+
+/* Menu Indicadores */
+.menu-indicadores {
+    margin-top: 100px;
+    height: 75px;
+    width: 100%;
+    background-color: red;
+}
+
+.itens-menu-indicadores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.itens-menu-indicadores ul:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Dashboards */
+.dashboards-area {
+    margin-bottom: 100px;
+}
+
+.dashboards {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.dashboard {
+    height: auto;
+    width: 100%;
+    max-width: 384px;
+    margin-bottom: 20px;
+}
+
+.dashboard img {
+    width: 100%;
+    max-width: 384px;
+}
+
+.dashboard h2 {
+    color: red;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.dashboard p {
+    color: black;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1919px) {
+    nav div {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    nav div div {
+        gap: 45px;
+    }
+
+    .imagem-dashboard {
+        width: 480px;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    .dashboards {
+        width: 85%;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+    nav div {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    nav div div {
+        gap: 40px;
+    }
+
+    .imagem-dashboard {
+        width: 480px;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    main {
+        width: 80%;
+    }
+
+    nav div {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .apresentacao-dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-dashboard {
+        width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        padding: 10px;
+    }
+
+    nav div {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    nav div h1 {
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    nav div div {
+        flex-direction: column;
+        gap: 20px;
+        line-height: 1.5;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .dashboards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav div div a {
+        font-size: 16px;
+    }
+
+    .itens-menu-indicadores {
+        flex-direction: column;
+        padding-top: 10px;
+        height: auto;
+    }
+
+    .imagem-dashboard {
+        max-width: 100%;
+    }
+
+    .texto-dashboard {
+        font-size: medium;
+    }
+}
