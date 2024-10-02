@@ -25,7 +25,7 @@ secrets = dotenv_values(".env")
 SECRET_KEY = secrets["django_secret_key"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = secrets["DEBUG"]
 
 ALLOWED_HOSTS = []
 
