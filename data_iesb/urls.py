@@ -17,6 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from main.views.home import home
+from main.views.parceiros import parceiros
+from main.views.institucional import institucional
+from main.views.indicadores import indicadores
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('', home),
+    path('parceiros/', parceiros),
+    path('institucional/', institucional),
+    path('indicadores/', indicadores),
 ]
