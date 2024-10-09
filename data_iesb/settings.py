@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'data_iesb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': secrets["db_name"],
+        'USER': secrets["db_user"],
+        'PASSWORD': secrets["db_password"],
+        'HOST': secrets["db_host"],
+        'PORT': secrets["db_port"],
     }
 }
 
